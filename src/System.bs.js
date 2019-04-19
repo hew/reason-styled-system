@@ -18,6 +18,13 @@ var font = /* array */[
   32
 ];
 
-exports.space = space;
-exports.font = font;
+var Scale = /* module */[
+  /* space */space,
+  /* font */font
+];
+
+var Units = /* module */[/* px */"px"];
+
+exports.Scale = Scale;
+exports.Units = Units;
 /* No side effect */

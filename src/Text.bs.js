@@ -4,8 +4,8 @@
 var React = require("react");
 var Caml_array = require("bs-platform/lib/js/caml_array.js");
 
-function BoxMaker(Config) {
-  var Box$BoxMaker = function (Props) {
+function TextMaker(Config) {
+  var Text$TextMaker = function (Props) {
     var py = Props.py;
     var px = Props.px;
     var p = Props.p;
@@ -13,6 +13,9 @@ function BoxMaker(Config) {
     var mb = Props.mb;
     var ml = Props.ml;
     var mr = Props.mr;
+    var color = Props.color;
+    Props.fontSize;
+    Props.is;
     var children = Props.children;
     var tmp;
     if (mt !== undefined) {
@@ -151,6 +154,7 @@ function BoxMaker(Config) {
     }
     return React.createElement("div", {
                 style: {
+                  color: color !== undefined ? color : "",
                   marginTop: tmp,
                   marginRight: tmp$1,
                   marginBottom: tmp$2,
@@ -163,8 +167,8 @@ function BoxMaker(Config) {
                 }
               }, children);
   };
-  return /* module */[/* make */Box$BoxMaker];
+  return /* module */[/* make */Text$TextMaker];
 }
 
-exports.BoxMaker = BoxMaker;
+exports.TextMaker = TextMaker;
 /* react Not a pure module */

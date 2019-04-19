@@ -27,7 +27,11 @@ function Component2(Props) {
   var state = match[0];
   var message = "You've clicked this " + (String(state[/* count */0]) + " times(s)");
   var match$1 = state[/* show */1];
-  return React.createElement("div", undefined, React.createElement(Primatives$ReactHooksTemplate.Box[/* make */0], {
+  return React.createElement("div", undefined, React.createElement(Primatives$ReactHooksTemplate.$$Text[/* make */0], {
+                  px: 3,
+                  fontSize: 5,
+                  children: "hey"
+                }), React.createElement(Primatives$ReactHooksTemplate.Box[/* make */0], {
                   px: 30,
                   mt: 2,
                   children: null

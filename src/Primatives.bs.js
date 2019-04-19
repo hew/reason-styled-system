@@ -2,9 +2,27 @@
 'use strict';
 
 var Box$ReactHooksTemplate = require("./Box.bs.js");
-var Scale$ReactHooksTemplate = require("./Scale.bs.js");
+var Text$ReactHooksTemplate = require("./Text.bs.js");
+var System$ReactHooksTemplate = require("./System.bs.js");
 
-var Box = Box$ReactHooksTemplate.BoxMaker(/* module */[/* scale */Scale$ReactHooksTemplate.space]);
+var scale = System$ReactHooksTemplate.Scale[/* space */0];
+
+var domUnit = System$ReactHooksTemplate.Units[/* px */0];
+
+var Box = Box$ReactHooksTemplate.BoxMaker(/* module */[
+      /* scale */scale,
+      /* domUnit */domUnit
+    ]);
+
+var scale$1 = System$ReactHooksTemplate.Scale[/* space */0];
+
+var domUnit$1 = System$ReactHooksTemplate.Units[/* px */0];
+
+var $$Text = Text$ReactHooksTemplate.TextMaker(/* module */[
+      /* scale */scale$1,
+      /* domUnit */domUnit$1
+    ]);
 
 exports.Box = Box;
+exports.$$Text = $$Text;
 /* Box Not a pure module */
