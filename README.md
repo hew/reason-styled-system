@@ -30,7 +30,7 @@ Beyond reason-react, reason-styled-system is dependency-free, and will likely st
 
 ## API 
 
-```reasonml
+```reason
 /* System.re */
 module Scale = {
   let space = [|2, 4, 8, 16, 32|];
@@ -42,7 +42,7 @@ module Units = {
 };
 ```
 
-```reasonml
+```reason
 /* Primatives.re */
 module Box =
   Box.BoxMaker({
@@ -58,15 +58,19 @@ module Text =
 
 ```
 
-```reasonml
+```reason
 /* In some component */
 [@react.component]
 let make = () => {
   Primatives.(
-    <div>
+    <>
+      /* All the elements follow the scale, up to five. Past five, the value is just passed
+         explicitly. So here, 3 = 8px, and 80 = 80px */
       <Text px=3 size=80> {"Sup mang" |> React.string} </Text>
+      
+      /* Here, 2 = 4px, and 30 = 30px */
       <Box mt=2 px=30> <div /> </Box>
-    </div>
+    </>
   );
 };
 
