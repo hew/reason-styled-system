@@ -10,12 +10,12 @@ Just for fun.
 
 ## Installation
 
-Install the library from github:
-```sh
-npm i github.com:hew/reason-styled-system
-```
+1. Install the library from github:
+  ```sh
+  npm i github.com:hew/reason-styled-system
+  ```
 
-Add the library to your `bsconfig.json`:
-```json
- "bs-dependencies": ["reason-styled-system"],
-```
+2. Add the library to your `bsconfig.json`:
+  ```json
+  "bs-dependencies": ["reason-styled-system"],
+  ```
