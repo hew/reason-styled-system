@@ -1,6 +1,6 @@
 {
   "name": "reason-styled-system",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
@@ -10,8 +10,9 @@
     "webpack:production": "NODE_ENV=production webpack",
     "server": "webpack-dev-server"
   },
+  "files": ["src/Text.re", "src/Box.re"],
   "keywords": ["BuckleScript"],
-  "author": "",
+  "author": "Matthew Jones <mathujones@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.1",
