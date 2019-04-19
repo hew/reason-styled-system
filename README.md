@@ -93,6 +93,7 @@ let make = () => {
 
 **Utility**
 - [x] style
+- [x] is (text)
 - [ ] responsive
 
 **Planned Others**
