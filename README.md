@@ -1,5 +1,11 @@
 # Reason Styled System
 
+> styled-system in reason!
+
+```reason
+<Text px=3 size=80> {"hummussss" |> React.string} </Text>
+```
+
 ## Status: WIP
 
 **Use at your own risk.**
@@ -94,4 +100,5 @@ let make = () => {
 
 ## Credits / Inspiration
 
-As this library is based on styled-system, most of the credits go to Brent Jackson and the maintainers of styled-system.
+* As this library is based on styled-system, most of the credits go to Brent Jackson and the maintainers of styled-system.
+* https://github.com/hew/styled-functors
