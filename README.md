@@ -2,17 +2,20 @@
 
 ## Status: WIP
 
-This library is a work-in-progress. 
+This library is not complete. The API may change. Use at your own risk.
 
 ## Motivations
 
 Just for fun.
 
-## Run Project
+## Installation
 
+Install the library from github:
 ```sh
-npm install
-npm start
-# in another tab
-npm run webpack
+npm i github.com:hew/reason-styled-system
+```
+
+Add the library to your `bsconfig.json`:
+```json
+ "bs-dependencies": ["reason-styled-system"],
 ```

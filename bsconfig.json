@@ -1,5 +1,8 @@
 {
-  "name": "react-hooks-template",
+  "name": "reason-styled-system",
+  "namespace": true,
+  "refmt": 3,
+  "suffix": ".bs.js",
   "reason": {
     "react-jsx": 3
   },
@@ -13,14 +16,5 @@
       "subdirs": true
     }
   ],
-  "package-specs": [
-    {
-      "module": "commonjs",
-      "in-source": true
-    }
-  ],
-  "suffix": ".bs.js",
-  "namespace": true,
-  "bs-dependencies": ["reason-react", "@astrada/bs-css-core"],
-  "refmt": 3
+  "bs-dependencies": ["reason-react"]
 }
