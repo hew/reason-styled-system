@@ -24,9 +24,7 @@ let make = (~greeting) => {
   let message =
     "You've clicked this " ++ string_of_int(state.count) ++ " times(s)";
   <div>
-    <Primatives.Text px=3 fontSize=5>
-      {"hey" |> React.string}
-    </Primatives.Text>
+    <Primatives.Text px=3 size=80> {"hey" |> React.string} </Primatives.Text>
     <Primatives.Box mt=2 px=30>
       <button onClick={_event => dispatch(Click)}>
         {ReasonReact.string(message)}

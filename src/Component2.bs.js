@@ -29,7 +29,7 @@ function Component2(Props) {
   var match$1 = state[/* show */1];
   return React.createElement("div", undefined, React.createElement(Primatives$ReactHooksTemplate.$$Text[/* make */0], {
                   px: 3,
-                  fontSize: 5,
+                  size: 80,
                   children: "hey"
                 }), React.createElement(Primatives$ReactHooksTemplate.Box[/* make */0], {
                   px: 30,

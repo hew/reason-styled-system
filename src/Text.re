@@ -15,13 +15,13 @@ module TextMaker = (Config: Config) => {
         ~ml=?,
         ~mr=?,
         ~color=?,
-        ~fontSize=?,
+        ~size=?,
         ~is="h1",
         ~children,
         (),
       ) =>
     ReactDOMRe.createDOMElementVariadic(
-      "div",
+      is,
       ~props=
         ReactDOMRe.domProps(
           ~style=
@@ -31,24 +31,24 @@ module TextMaker = (Config: Config) => {
                 | Some(c) => c
                 | None => ""
                 },
-              // ~fontSize=
-              //   switch (fontSize) {
-              //   | Some(s) =>
-              //     switch (s) {
-              //     | s when s == 5 =>
-              //       (Config.scale[5] |> string_of_int) ++ Config.domUnit
-              //     | s when s == 4 =>
-              //       (Config.scale[4] |> string_of_int) ++ Config.domUnit
-              //     | s when s == 3 =>
-              //       (Config.scale[3] |> string_of_int) ++ Config.domUnit
-              //     | s when s == 2 =>
-              //       (Config.scale[2] |> string_of_int) ++ Config.domUnit
-              //     | s when s == 1 =>
-              //       (Config.scale[1] |> string_of_int) ++ Config.domUnit
-              //     | s => (s |> string_of_int) ++ Config.domUnit
-              //     }
-              //   | None => ""
-              //   },
+              ~fontSize=
+                switch (size) {
+                | Some(s) =>
+                  switch (s) {
+                  | s when s == 5 =>
+                    (Config.scale[5] |> string_of_int) ++ Config.domUnit
+                  | s when s == 4 =>
+                    (Config.scale[4] |> string_of_int) ++ Config.domUnit
+                  | s when s == 3 =>
+                    (Config.scale[3] |> string_of_int) ++ Config.domUnit
+                  | s when s == 2 =>
+                    (Config.scale[2] |> string_of_int) ++ Config.domUnit
+                  | s when s == 1 =>
+                    (Config.scale[1] |> string_of_int) ++ Config.domUnit
+                  | s => (s |> string_of_int) ++ Config.domUnit
+                  }
+                | None => ""
+                },
               ~marginTop=
                 switch (mt) {
                 | Some(m) =>
