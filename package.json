@@ -10,8 +10,13 @@
     "webpack:production": "NODE_ENV=production webpack",
     "server": "webpack-dev-server"
   },
-  "files": ["src/Text.re", "src/Box.re"],
-  "keywords": ["BuckleScript"],
+  "files": [
+    "src/Text.re",
+    "src/Box.re"
+  ],
+  "keywords": [
+    "BuckleScript"
+  ],
   "author": "Matthew Jones <mathujones@gmail.com>",
   "license": "MIT",
   "dependencies": {
