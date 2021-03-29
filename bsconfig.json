@@ -15,6 +15,6 @@
       "subdirs": true
     }
   ],
-  "bs-dependencies": [ "reason-react" ],
+  "bs-dependencies": [ "@rescript/react" ],
   "warnings": { "number": "-44" }
 }
