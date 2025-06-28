@@ -40,7 +40,7 @@ Beyond reason-react, reason-styled-system is dependency-free, and will likely st
 /* System.re */
 module Scale = {
   let space = [|2, 4, 8, 16, 32|];
-  let font = [|2, 4, 8, 16, 32|]; // I'm lazy rn, but this would be different.
+  let font = [|2, 4, 8, 16, 32|];
 };
 
 module Units = {
